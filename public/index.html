@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documantation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 class="text-center">Documantation</h1>
+    <div class="d-flex justify-content-center mt-5">
+        <table class="table table-striped w-75">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Route</th>
+                    <th scope="col">Request</th>
+                    <th scope="col">Fields</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Register</th>
+                    <td>/users</td>
+                    <td>POST</td>
+                    <td>
+                        <ul>
+                            <li>name (required)</li>
+                            <li>email (required)</li>
+                            <li>password (required)</li>
+                            <li>passwordConfirm (required)</li>
+                            <li>date_created</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <th>Login</th>
+                <td>/users/login</td>
+                <td>POST</td>
+                <td>
+                    <ul>
+                        <li>email (required)</li>
+                        <li>password (required)</li>
+                    </ul>
+                </td>
+                </tr>
+
+                <th>Get 10 toys by page number</th>
+                <td>toys?page=number</td>
+                <td>GET</td>
+                <td></td>
+                </tr>
+
+                <th>Search toys by name and info and show 10 toys by page number</th>
+                <td>/toys/search?s=key-word&page=number</td>
+                <td>GET</td>
+                <td></td>
+                </tr>
+
+                <th>Get all toys by category and show 10 toys by page number</th>
+                <td>toys/category/:category-name?page=number</td>
+                <td>GET</td>
+                <td></td>
+                </tr>
+
+                <th>Get toy by id</th>
+                <td>/toys/single/:id</td>
+                <td>GET</td>
+                <td></td>
+                </tr>
+
+                <th>Add a toy</th>
+                <td>/toys</td>
+                <td>POST</td>
+                <td>
+                    <ul>
+                        <li>name (required)</li>
+                        <li>info (required)</li>
+                        <li>category (required)</li>
+                        <li>img_url</li>
+                        <li>price (required)</li>
+                        <li>date_created</li>
+                    </ul>
+                </td>
+                </tr>
+
+                <th>Edit a toy</th>
+                <td>/toys/:id</td>
+                <td>PUT</td>
+                <td>
+                    <ul>
+                        <li>name (required)</li>
+                        <li>info (required)</li>
+                        <li>category (required)</li>
+                        <li>img_url</li>
+                        <li>price (required)</li>
+                        <li>date_created</li>
+                    </ul>
+                </td>
+                </tr>
+
+                <th>Delete a toy</th>
+                <td>/toys/:id</td>
+                <td>DELETE</td>
+                <td></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
